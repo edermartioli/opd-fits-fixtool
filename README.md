@@ -10,18 +10,21 @@ The main functionality of this tool is to edit the FITS header of a given list o
 ```
 "-r", "--datadir", help="Data directory", type='string'
 "-i", "--input", help="Input data pattern", type='string'
+
 "-o", "--object", help="Object name", type='string'
 "-y", "--obstype", help="OBSTYPE", type='string'
 "-f", "--filter", help="Filter", type='string'
-"-R", "--ra", help="Right Ascension (HH:MM:SS.SSSSS)", type='string'
-"-D", "--dec", help="Declination (DD:MM:SS.SSSSS)", type='string'
 "-b", "--observer", help="Observer(s)", type='string'
-
 "-t", "--telescope", help="Telescope", type='string'
 "-m", "--instrument", help="Instrument", type='string'
 "-a", "--acqsys", help="Acquisition system", type='string'
+
 "-g", "--gain", help="CCD gain [e-/ADU]", type='float'
 "-n", "--readnoise", help="Readout noise [e-]", type='float'
+
+"-R", "--ra", help="Right Ascension (HH:MM:SS.SSSSS)", type='string'
+"-D", "--dec", help="Declination (DD:MM:SS.SSSSS)", type='string'
+
 "-N", "--north", help="North direction [UP, DOWN, RIGHT, LEFT]", type='string'
 "-E", "--east", help="East direction [UP, DOWN, RIGHT, LEFT]", type='string'
 
