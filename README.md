@@ -52,7 +52,7 @@ Flat: python $PATH/fixrawdata.py --input=*_c1_flat_I.fits --object="FLAT" --obst
 ```
 
 *****************************************
-# WARNING: `fixrawdata.py` updates the FITS files, therefore the changes made cannot be undone!!!
+# WARNING: `fixrawdata.py` updates FITS files, so changes made cannot be undone!!!
 *****************************************
 
 
