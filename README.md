@@ -13,9 +13,9 @@ The main functionality of this tool is to edit the FITS header of a given list o
 
 "-o", "--object", help="Object name", type='string'
 "-y", "--obstype", help="Observation type [ZERO, FLAT, OBJECT]", type='string'
-"-f", "--filter", help="Filter", type='string'
+"-f", "--filter", help="Filter [U, B, V, R, I]", type='string'
 "-b", "--observer", help="Observer(s)", type='string'
-"-t", "--telescope", help="Telescope", type='string'
+"-t", "--telescope", help="Telescope ['BC0.60m', 'ZE0.60m', 'PE1.60m']", type='string'
 "-m", "--instrument", help="Instrument", type='string'
 "-a", "--acqsys", help="Acquisition system", type='string'
 
