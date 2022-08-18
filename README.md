@@ -12,7 +12,7 @@ The main functionality of this tool is to edit the FITS header of a given list o
 "-i", "--input", help="Input data pattern", type='string'
 
 "-o", "--object", help="Object name", type='string'
-"-y", "--obstype", help="OBSTYPE", type='string'
+"-y", "--obstype", help="Observation type [ZERO, FLAT, OBJECT]", type='string'
 "-f", "--filter", help="Filter", type='string'
 "-b", "--observer", help="Observer(s)", type='string'
 "-t", "--telescope", help="Telescope", type='string'
