@@ -28,13 +28,13 @@ The main functionality of this tool is to edit the FITS header of a given list o
 "-z", "--timezone", help="Time zone", type='int'
 ```
 
-Below is a simple usage using default configurations defined in the `fix_params.py` file:
+Below is a simple usage example using the default settings defined in the `fix_params.py` file:
 
 ```
-python fixrawdata.py --input=*.fits
+python $PATH/fixrawdata.py --input=*.fits
 ```
 
-Below are usage examples where some keywords are set from the command line:
+Below are some usage examples where some keywords are defined on the command line:
 
 ```
 ZE_22jul17_E -> python $PATH/fixrawdata.py --input=aumic_i_*.fits --telescope='ZE0.60m' --instrument='CAM4+Ixon4269' --acqsys="OPDAcquisition" --gain=3.8 --readnoise=8.2 --north='RIGHT' --east='DOWN' --timekey="DATE-OBS" --timetype="UT" --timezone=-3 -v
@@ -42,7 +42,7 @@ ZE_22jul17_E -> python $PATH/fixrawdata.py --input=aumic_i_*.fits --telescope='Z
 ZE_22jul17_W -> python $PATH/fixrawdata.py --input=aumic_i_*.fits --telescope='ZE0.60m' --instrument='CAM4+Ixon4269' --acqsys="OPDAcquisition" --gain=3.8 --readnoise=8.2 --north='LEFT' --east='UP' --timekey="DATE-OBS" --timetype="UT" --timezone=-3 -v
 ```
 
-BC_22jul05:
+BC0.60m -> 22jul05:
 ```
 Science: python $PATH/fixrawdata.py --input=*_c1_AUMIC_I.fits --telescope='BC0.60m' --instrument='CAM2+IxonUltra9915' --acqsys="GEI+ACS" --gain=3.3 --readnoise=6.57 --north='RIGHT' --east='DOWN' --timekey="DATE" --timetype="UT" --timezone=-3 -v
 
