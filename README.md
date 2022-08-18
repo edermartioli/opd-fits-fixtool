@@ -50,3 +50,19 @@ Bias: python $PATH/fixrawdata.py --input=*_c1_zero.fits --object="ZERO" --obstyp
 
 Flat: python $PATH/fixrawdata.py --input=*_c1_flat_I.fits --object="FLAT" --obstype="FLAT" --filter="I" --ra="00:00:00.00" --dec="00:00:00.00" --telescope='BC0.60m' --instrument='CAM2+IxonUltra9915' --acqsys="GEI+ACS" --gain=3.3 --readnoise=6.57 --north='RIGHT' --east='DOWN' --timekey="DATE" --timetype="UT" --timezone=-3 -v
 ```
+
+*****************************************
+# WARNING: `fixrawdata.py` updates the FITS files, therefore the changes made cannot be undone!!!
+*****************************************
+
+
+# Tool `checkkeys.py`
+
+The tool `checkkeys.py` can be used to print the important keys of a list of input FITS files. The important keys are defined as a list of keywords saved in the dictionary entry `p['IMPORTANT_KEYS']` in the `fix_params.py` file. One can uncomment/comment keywords in this list to include/exclude important keys to be printed. 
+
+Below is a simple usage example of the tool `checkkeys.py`:
+
+```
+python $PATH/checkkeys.py --input=*.fits
+```
+
