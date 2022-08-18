@@ -1,6 +1,8 @@
 # OPD FITS `fixtool`
 Toolkit for correcting FITS files obtained from the Pico dos Dias observatory (OPD)
 
+# Tool `fixrawdata.py`
+
 The main tool is `fixrawdata.py`, which can be run from a command line directly from a shell terminal. 
 
 The main functionality of this tool is to edit the FITS header of a given list of FITS files to include the necessary keywords defined in the `fix_params.py` file. The values of these keywords are also defined in the `fix_params.py`, but for a subset of these keywords it is possible to override their values with input values from the command line. The tool also rotates and flips the image to ensure the orientation is set to North up and East to the left. The following input arguments are available:
